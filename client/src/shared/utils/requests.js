@@ -1,7 +1,7 @@
 import axios from "axios";
 import { FETCH_ERROR } from "../context/types";
 
-const baseUrl = "http://192.168.1.104:5000/api/";
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export const request = async ({
   url,
